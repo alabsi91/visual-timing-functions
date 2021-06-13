@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+}
+
+#container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 100px auto;
+  background-color: lightgray;
+}
+
+#container svg {
+  position: absolute;
+  right: -50px;
+  top: 400px;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -120px);
+}
+
+#xyCanvas {
+  transform: translateY(-100px);
+}
+
+#pointDrawer {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(-50%, -110px);
+}
+
+select {
+  margin: auto;
+  display: block;
+  padding: 5px;
+  width: 600px;
+  text-align-last: center;
+  border: none;
+  border-bottom: solid 1px black;
+  font-size: large;
+  cursor: pointer;
+}
+button {
+  margin: 50px auto;
+  display: block;
+  padding: 5px;
+  width: 600px;
+  text-align-last: center;
+  border: solid 0.5px lightslategray;
+  border-radius: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+input {
+  display: block;
+  margin: 50px auto;
+  padding: 5px;
+  width: 600px;
+  text-align-last: center;
+  border: solid 0.5px lightslategray;
+  border-radius: 10px;
+  font-size: large;
+}
+p {
+  display: none;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: large;
+}
