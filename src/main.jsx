@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import React, { Component } from 'react';
 import { requestFrame, S } from 'selector_dom';
 
-const ease = (test) => {
-  if (test) return
+const ease = (x, test) => {
+  if (test) return;
   const code = S('#easeCode').val();
   // eslint-disable-next-line no-eval
   return eval(code);
 };
 
-ease(true) // using ease function to prevent it from being removed after build.
+ease(null, true); // using ease function to prevent it from being removed after build.
 
 export default class Easing extends Component {
   state = { easing: 'easeInSine', duration: 2000 };
