@@ -1,5 +1,5 @@
 import './index.css';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import React, { Component } from 'react';
 import { requestFrame, S } from 'selector_dom';
 
@@ -10,7 +10,6 @@ const ease = x => {
   return eval(code);
 };
 
-// const stairEase = x => (Math.ceil(20 * x) / Math.round(20 * x)) * x;
 
 export default class Easing extends Component {
   state = { easing: 'easeInSine', duration: 2000 };
@@ -148,10 +147,8 @@ export default class Easing extends Component {
   }
 }
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Easing />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
-
